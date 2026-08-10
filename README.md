@@ -1,4 +1,4 @@
-# Cheepá - Relational Database System & Dashboard
+# Cheepá - Relational Database System, Dashboard and Reporting
 
 ## 🗄️ Overview
 This repository contains the complete relational data infrastructure designed for **Cheepá**. The project features a highly normalized SQL database schema structured to maintain strict data integrity, manage business operations cleanly, and track transactional metrics across sales, inventory, and marketing campaigns.
