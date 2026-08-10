@@ -1,4 +1,4 @@
-# Cheepá - Relational Database System
+# Cheepá - Relational Database System & Dashboard
 
 ## 🗄️ Overview
 This repository contains the complete relational data infrastructure designed for **Cheepá**. The project features a highly normalized SQL database schema structured to maintain strict data integrity, manage business operations cleanly, and track transactional metrics across sales, inventory, and marketing campaigns.
@@ -46,3 +46,36 @@ Beyond database architecture, this project contains advanced data analysis metri
 - **Window Functions & Ranking:** Segmentations using `RANK()`, `DENSE_RANK()`, and `ROW_NUMBER() OVER (PARTITION BY...)` tracking purchase sequences, top customers by segment, and generating masked customer IDs (`CONCAT`).
 
 📂 You can inspect the fully documented script in [`analytics_queries.sql`](./analytics_queries.sql).
+
+# Cheepá - Business Performance Dashboard
+
+## 📊 Overview
+This repository contains the interactive business performance dashboard designed for **Cheepá**. Built using **Looker Studio**, this dashboard tracks and visualizes key sales metrics, revenue streams, costs, and customer acquisition trends over time to drive data-backed business decisions.
+
+### 🔗 Live Dashboard
+Link: https://datastudio.google.com/u/0/reporting/80c5aa99-1d63-4a8b-9783-011e4d84f2a4/page/Bk1sF
+
+------
+## 📷 Dashboard Preview
+
+[![Cheepá Dashboard Preview](image_e14d5b.png)](https://datastudio.google.com/u/0/reporting/80c5aa99-1d63-4a8b-9783-011e4d84f2a4/page/Bk1sF)
+*Note: Click on the image to open the dynamic version with active filters.*
+
+## 🚀 Key Metrics Tracked
+
+- **Financial Health:** Real-time visibility into **Total Income ($41.5M)**, **Gross Income ($29.37M)**, and **Total Costs ($12.1M)**, maintaining a strong **70.68% Gross Margin**.
+- **Sales Breakdown:** Detailed tracking of products by revenue and volume (e.g., *Promo Clasico* leading with $12.36M generated across 1,353 units).
+- **Customer Acquisition:** Historical analysis of total monthly customers and recurring vs. one-time buyer ratios.
+- **Sales Channels:** Distribution analysis of revenue coming from Instagram, WhatsApp, and In-Person sales.
+
+## 🛠️ Features & Interactivity
+
+The dashboard includes dynamic controls to slice the data instantly by:
+- **Month** 
+- **Product**
+- **Sales Category**
+- **Point of Contact (POC)** / Sales Channel
+
+## 🧰 Tech Stack
+- **Data Visualization:** Looker Studio
+- **Data Source:** Google Sheets and Google AppSheet
