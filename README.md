@@ -45,8 +45,7 @@ Beyond database architecture, this project contains advanced data analysis metri
 - **Advanced Benchmarking:** Query models comparing individual order values against overall historical averages using complex CTEs (`WITH` clauses) and `CROSS JOIN` methods.
 - **Window Functions & Ranking:** Segmentations using `RANK()`, `DENSE_RANK()`, and `ROW_NUMBER() OVER (PARTITION BY...)` tracking purchase sequences, top customers by segment, and generating masked customer IDs (`CONCAT`).
 
-📂 You can inspect the fully documented script in [`analytics_queries.sql`](./analytics_queries.sql).
-
+------
 # Cheepá - Business Performance Dashboard
 
 ## 📊 Overview
