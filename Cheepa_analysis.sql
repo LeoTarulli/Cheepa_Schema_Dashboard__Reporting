@@ -1,13 +1,7 @@
--- ============================================================
--- CHEEPÁ SYSTEM: ANALYTICAL & BUSINESS INTELLIGENCE QUERIES
--- This script contains business logic calculations, performance
--- aggregations, and advanced window functions.
--- ============================================================
 
--- ============================================================
 -- SECTION 1: DATA PREPARATION & VIEWS
 -- Creating a unified master view to simplify downstream metrics
--- ============================================================
+
 
 CREATE OR REPLACE VIEW info AS 
 SELECT 
@@ -27,10 +21,9 @@ INNER JOIN categories c2 ON c2.CategoryID = o.Category
 INNER JOIN contact c ON c.RedID = o.Contacto;
 
 
--- ============================================================
+
 -- SECTION 2: BUSINESS PERFORMANCE & FINANCIAL METRICS
 -- Revenue, Cost, and Profit margins calculations
--- ============================================================
 
 -- Q1: Financial performance per individual order
 WITH info_per_order AS (
@@ -57,10 +50,9 @@ WITH info_per_month AS (
 SELECT * FROM info_per_month;
 
 
--- ============================================================
+
 -- SECTION 3: ADVANCED ANALYTICS & CTEs
 -- Identifying high-value entities and benchmarking
--- ============================================================
 
 -- Q3: Orders that beat the average order value benchmark
 WITH avg_rev_per_order AS (
@@ -96,10 +88,9 @@ WITH top_5_product_rev AS (
 SELECT * FROM top_5_product_rev LIMIT 5;
 
 
--- ============================================================
+
 -- SECTION 4: ADVANCED WINDOW FUNCTIONS
 -- Row numbering, ranking partitions, and behavioral analytics
--- ============================================================
 
 -- Q5: Chronological purchase history sequence per customer
 SELECT 
