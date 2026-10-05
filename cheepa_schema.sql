@@ -1,10 +1,6 @@
--- ============================================================
--- DATABASE SCHEMA: CHEEPÁ SYSTEM
--- Generated from the Entity-Relationship Diagram (ERD)
--- ============================================================
 
 -- 1. INDEPENDENT TABLES (Master Dimensions)
--- ============================================================
+
 
 CREATE TABLE Products (
     Product_ID INT PRIMARY KEY,
@@ -45,7 +41,6 @@ CREATE TABLE Ads (
 );
 
 -- 2. HISTORICAL AND DEPENDENT TABLES
--- ============================================================
 
 CREATE TABLE CostHistory (
     ID INT PRIMARY KEY,
@@ -73,7 +68,6 @@ CREATE TABLE inventory (
 );
 
 -- 3. TRANSACTIONAL TABLES (Facts and Details)
--- ============================================================
 
 CREATE TABLE inventoryDetails (
     inventory_ID INT,
